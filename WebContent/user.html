@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+<HEAD>
+
+<TITLE>User Create</TITLE>
+<style type="text/css">
+table {
+	border: 2px solid;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td,tr {
+	border: 1 solid;
+	vertical-align: middle
+}
+
+th {
+	border: 1px solid
+}
+
+.output {
+	border: 1px solid;
+	vertical-align: middle;
+}
+</style>
+<SCRIPT LANGUAGE="JavaScript" src="user2.js" type="text/javascript">
+	
+</SCRIPT>
+
+
+</HEAD>
+<BODY style="font-family: arial">
+
+	<div id="fb-root"></div>
+	<!--  script language="javascript" src="fb.js" type="text/javascript"></script-->
+	<h1>
+		<center>
+			<b>User Create</b>
+		</center>
+	</h1>
+
+	<FORM name="myForm" action="" method="get">
+		<table align=center cellpadding=10 width=350>
+			<tr>
+				<td>Username:</td>
+				<td><INPUT TYPE="text" Name="username" VALUE="Username"
+					style="width: 200px" /></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><SELECT NAME="gender" width=200 style="width: 200px">
+						<OPTION SELECTED VALUE="Male">Male</OPTION>
+						<OPTION VALUE="Female">Female</OPTION>
+				</SELECT></td>
+			</tr>
+			<tr>
+				<td>Facebook Account:</td>
+				<td><INPUT TYPE="text" Name="facebookId" VALUE="chenww05"
+					style="width: 200px" /></td>
+			</tr>
+			<tr>
+				<td>LinkedIn Account:</td>
+				<td><INPUT TYPE="text" Name="linkedInId" VALUE="chenww05"
+					style="width: 200px" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><INPUT TYPE="text" Name="password" VALUE="abcd"
+					style="width: 200px" /></td>
+			</tr>
+
+			<tr>
+				<td colspan=2><center>
+						<input type="button" value="Insert"
+							onClick="validateForm(this.form)">
+							<input type="button" value="Update"
+							onClick="updateForm(this.form)">
+					</center></td>
+			</tr>
+		</table>
+	</FORM>
+	<div id="updateArea"></div>
+	<noscript>
+</BODY>
+</HTML>

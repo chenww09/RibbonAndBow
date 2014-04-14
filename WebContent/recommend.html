@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<HTML>
+
+<HEAD>
+
+<TITLE>Recommendation</TITLE>
+<style type="text/css">
+table {
+	border: 2px solid;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td,tr {
+	border: 1 solid;
+	vertical-align: middle
+}
+
+th {
+	border: 1px solid
+}
+
+.output {
+	border: 1px solid;
+	vertical-align: middle;
+}
+</style>
+<SCRIPT LANGUAGE="JavaScript" src="submit.js" type="text/javascript">
+	
+</SCRIPT>
+
+
+</HEAD>
+<BODY style="font-family: arial">
+
+	<div id="fb-root"></div>
+	<h1>
+		<center>
+			<b>Recommendation</b>
+		</center>
+	</h1>
+
+	<FORM name="myForm" action="" method="get">
+		<table align=center cellpadding=10 width=350>
+			<tr>
+				<td colspan=2><center>
+						<input type="button" value="List User Info"
+							onClick="listUser(this.form)">
+							<input type="button" value="List Product Info"
+							onClick="listProduct(this.form)">
+							<input type="button" value="Clear" onClick="clearForm(this.form)">
+					</center></td>
+					</center></td>
+			</tr>
+			<div id="userProduct"></div>
+			<tr>
+				<td>Recommend based on ID:</td>
+				<td><INPUT TYPE="text" Name="userId" VALUE=""
+					style="width: 200px" /></td>
+					<td colspan=2><center>
+					<input type="button" value="Go" onClick="recommendId(this.form)">
+					</center></td>
+			</tr>
+			
+			<tr>
+				<td>Recommend based on interest:</td>
+				<td><INPUT TYPE="text" Name="keywords" VALUE=""
+					style="width: 200px" /></td>
+					<td colspan=2><center>
+					<input type="button" value="Go" onClick="recommendKeyword(this.form)">
+					</center></td>
+					
+			</tr>
+		</table>
+	</FORM>
+	<div id="updateArea"></div>
+	<noscript>
+</BODY>
+</HTML>
